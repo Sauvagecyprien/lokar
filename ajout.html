@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="add.php" method="POST" id="for">
+
+        <div class="champ">
+            <label>Marque</label><br>
+            <input name="marque" type="text" class="full">
+        </div>
+        <div class="champ">
+            <label>Modèle</label><br>
+            <input name="model" type="text" class="full" required="required">
+        </div>
+        <div class="champ">
+            <label>Date d'émission de la Carte Grise</label><br>
+            <input name="date" type="date" class="full" required="required">
+        </div>
+        <div class="champ">
+            <label>Kilométrage</label><br>
+            <input name="km" type="number" class="full" required="required">
+        </div>
+        <div class="champ">
+            <label>Immatriculation</label><br>
+            <input name="imat" type="text" class="full">
+        </div>
+        <div class="champ">
+            <label>Nombre de place</label><br>
+            <input name="nbp" type="number" class="full">
+        </div>
+        <div class="champ">
+            <label>Prix journalier</label><br>
+            <input name="prix" type="number" class="full">
+        </div>
+        <div class="champ">
+            <label>Icone</label><br>
+            <input name="ico" type="url" class="full">
+        </div>
+        <div class="champ">
+            <label>Motorisation</label><br>
+            <select name="motor" class="full">
+                <option value="Essence">Essence</option>
+                <option value="Diesel">Diesel</option>
+            </select>
+        </div>
+        <div class="champ">
+            <label>Climatisation</label><br>
+            <select name="clim" class="full">
+                <option value="Oui">Oui</option>
+                <option value="Non">Non</option>
+            </select>
+        </div>
+        <div class="champ">
+            <label>Boites de Vitesse</label><br>
+            <select name="boite" class="full">
+                <option value="Automatique">Automtique</option>
+                <option value="Manuel">Manuel</option>
+            </select>
+        </div>
+        <div class="champ">
+            <label>Disponibilité</label><br>
+            <select name="dispo" class="full">
+                <option value="Disponible">Disponible</option>
+                <option value="Indisponible">Indisponible</option>
+            </select>
+        </div>
+        <div class="champ">
+            <label>Description</label><br>
+            <textarea name="describ" class="zon" placeholder=" Ecrire votre texte..." form="for" ></textarea>
+        </div>
+        <div class="champ">
+            <button type="submit" class="btn btn-primary btn-block btn-large" style="margin-bottom: 5%">Envoie</button>
+    </form>
+</body>
+
+</html>
